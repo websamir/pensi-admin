@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-family: "Poppins", sans-serif;
+  color-scheme: white;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  
+}
+
+.loading-image {
+  animation: pulse 5s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+   
+    transform: scale(1); 
+  }
+  100% {
+   
+    transform: scale(1.1); 
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .btn-scroll {
+      visibility: hidden;
+  }
+}
