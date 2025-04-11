@@ -52,9 +52,10 @@ const Detalle = () => {
         try {
             const res = await axios.post(`${API_URL}/api/upload/imagenes`, f, {
                 headers: {
-                    "Content-Type": 'multipart/form-data',
+                  //  "Content-Type": 'multipart/form-data',
                     "Authorization": 'Bearer ' + authToken,
-                    "Accept": 'application/json'
+                    "Accept": 'application/json',
+                     'X-Requested-With': 'XMLHttpRequest'
                 }
             });
 
