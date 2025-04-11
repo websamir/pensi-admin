@@ -13,7 +13,14 @@ const axiosInstance = axios.create({
     withCredentials: true,
 });
 
-
+export const axiosFormData = axios.create({
+    baseURL: 'https://pensi-api-production.up.railway.app',
+    headers: {
+        'Accept': 'application/json',
+        'X-Requested-With': 'XMLHttpRequest',
+    },
+    withCredentials: true,
+});
 
 
 
